@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.background{
+	height: 100%;
+	width: 0%;
+	background-image: url(images/bgcontact.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: auto;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+	0%{
+		width: 0%;
+	}
+	25%{
+		width: 25%;
+	}
+	50%{
+		width: 50%;
+	}
+	75%{
+		width: 75%;
+	}
+	100%{
+		width:100%;
+	}
+
+}
+
+.nav{
+	width: 17%;
+	height: auto;
+	position: fixed;
+	top: 15%;
+	left: 0%;
+	opacity: 0%;
+	animation-name: nav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes nav{
+	0%{
+		opacity: 0%;
+	}
+	25%{
+		opacity:25%;
+		
+	}
+	50%{
+		opacity: 50%;
+	}
+	75%{
+		opacity:  75%;
+	}
+	100%{
+		opacity: 100%;
+	}
+
+}
+
+
+
+
+.nav a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px;
+	float: left;
+	display: inline-block;
+	background-color: gray;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 400ms;
+	border: none;
+
+}
+
+ .nav a:hover{
+	background-color: white;
+	color: gray;
+	width: 100%;
+	opacity:100%;
+}
+.a{
+	width:65%;
+	opacity: 70%;
+}
+.b{
+	width: 70%;
+	opacity: 70%;
+}
+.c{
+	width: 75%;
+	opacity: 75%;
+}
+.d{
+	width: 65%;
+	opacity: 80%;
+}
+.e{
+	width: 75%;
+	opacity: 80%;
+}
+
+
+.content{
+	width: 70%;
+	min-height: 82%;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	top: 9%;
+	opacity: 0%;
+	animation-name: nav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	
+}
+.projects{
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.projects .img{
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	opacity: 85%;
+
+}
+.projects .img img{
+	height: 250px;
+	width: 250px;
+}
+.projects .img a{
+	color: black;
+	text-align: center;
+	text-decoration:none;
+}
+.projects .img h2{
+	color: black;
+	text-align: center;
+}

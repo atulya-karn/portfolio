@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.background{
+	height: 100%;
+	width: 100%;
+	background-image: url(images/bgblog.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: auto;
+	animation-name: afadein;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards; 
+}
+@keyframes afadein{
+	0%{
+		height:  0%;
+	}
+	25%{
+		height:  25%;
+	}
+	50%{
+		height:  50%;
+	}
+	75%{
+		height:  75%;
+	}
+	100%{
+		height:  100%;
+	}
+
+}
+
+.nav{
+	width: 17%;
+	height: auto;
+	position: fixed;
+	top: 15%;
+	left: 0%;
+	opacity: 0%;
+	animation-name: anav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes anav{
+	0%{
+		opacity: 0%;
+	}
+	25%{
+		opacity:25%;
+		
+	}
+	50%{
+		opacity: 50%;
+	}
+	75%{
+		opacity:  75%;
+	}
+	100%{
+		opacity: 100%;
+	}
+
+}
+
+
+.nav a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px;
+	float: left;
+	display: inline-block;
+	background-color: #87ceeb;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 400ms;
+	border: none;
+
+}
+
+ .nav a:hover{
+	background-color: white;
+	color: #87ceeb;
+	width: 100%;
+	opacity:100%;
+	border: 1px solid black;
+}
+.a{
+	width:65%;
+	opacity: 70%;
+}
+.b{
+	width: 70%;
+	opacity: 70%;
+}
+.c{
+	width: 75%;
+	opacity: 75%;
+}
+.d{
+	width: 65%;
+	opacity: 80%;
+}
+.e{
+	width: 75%;
+	opacity: 80%;
+}
+
+
+.content{
+	width: 70%;
+	min-height: 82%;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	top: 9%;
+	opacity: 0%;
+	animation-name: anav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	
+}
+.blogs{
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.blogs .img{
+	position: relative;
+	display: inline-block;
+	margin: auto;
+
+}
+.blogs .img a{
+	color: white;
+	text-align: center;
+	text-decoration:none;
+}
+.blogs .img h2{
+	color: black;
+	text-align: center;
+}
+
+.blogs .img h5{
+	color: black;
+	text-align: center;
+}

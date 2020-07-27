@@ -1,0 +1,170 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+.background{
+	height: 0%;
+	width: 100%;
+	background-image: url(images/bgabout.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: auto;
+	animation-name: afadein;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards; 
+}
+@keyframes afadein{
+	0%{
+		height:  0%;
+	}
+	25%{
+		height:  25%;
+	}
+	50%{
+		height:  50%;
+	}
+	75%{
+		height:  75%;
+	}
+	100%{
+		height:  100%;
+	}
+
+}
+.nav{
+	width: 17%;
+	height: auto;
+	position: fixed;
+	top: 15%;
+	left: 0%;
+	opacity: 0%;
+	animation-name: anav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes anav{
+	0%{
+		opacity: 0%;
+	}
+	25%{
+		opacity:25%;
+		
+	}
+	50%{
+		opacity: 50%;
+	}
+	75%{
+		opacity:  75%;
+	}
+	100%{
+		opacity: 100%;
+	}
+
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px;
+	float: left;
+	display: inline-block;
+	background-color: #ff007f;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 400ms;
+	border: none;
+
+}
+ .nav a:hover{
+	background-color: white;
+	color: #ff007f;
+	width: 100%;
+	opacity:100%;
+	border: 1px solid black;
+	font-weight: bold;
+}
+.a{
+	width:65%;
+	opacity: 40%;
+}
+.b{
+	width: 70%;
+	opacity: 40%;
+}
+.c{
+	width: 75%;
+	opacity: 40%;
+}
+.d{
+	width: 65%;
+	opacity:40%;
+}
+.e{
+	width: 75%;
+	opacity: 40%;
+}
+
+.content{
+	width: 70%;
+	min-height: 82%;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	top: 9%;
+	opacity: 0%;
+	animation-name: anav;
+	animation-duration: 500ms;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.about{
+	position: absolute;
+	right: 0;
+	top: 15%;
+	color: black;
+	font-weight: 900;
+	font-family: Verdana;
+	
+}
+.about p{
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	text-align: justify;
+	padding-right: 70px;
+}
+
+.about button{
+	width:300px;
+	height: 70px;
+	font-size: 20px;
+	font-family: Verdana;
+	font-weight:bold;
+	opacity: 95%;
+	background-color:pink;
+	border: 1px solid black;
+	border-radius: 30px;
+}
+
+.about button:hover{
+	background-color: #ff007f;
+	color: white;
+	cursor: pointer;
+}
